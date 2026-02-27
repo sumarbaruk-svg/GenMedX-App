@@ -34,11 +34,8 @@ from email import message_from_bytes
 
 import google.generativeai as genai
 
-
-
 # --- AI CONFIGURATION ---
-
-genai.configure(api_key="AIzaSyDbBfERpdBfHOaPpi4rlO6GavbGNJohdPo")
+genai.configure(api_key=st.secrets["GEMINI_API_KEY"])
 
 
 
